@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bh3NDU/hxc/i5aJRHbLrEh62bteCYsDgjAr+qs4rw5WUMir85NP6GHcFgiFzaN4wueta0pWVLi/UM0LhEbwEzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Josileissu\\Desktop\\Projeto Suelio\\Fall\\Fall.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Josileissu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
