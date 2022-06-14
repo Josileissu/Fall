@@ -19,6 +19,7 @@ namespace Fall
         {
             this.btn_Viga = new System.Windows.Forms.Button();
             this.btn_Pilares = new System.Windows.Forms.Button();
+            this.btn_Fechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Viga
@@ -45,6 +46,18 @@ namespace Fall
             this.btn_Pilares.UseVisualStyleBackColor = false;
             this.btn_Pilares.Click += new System.EventHandler(this.btn_Pilares_Click);
             // 
+            // btn_Fechar
+            // 
+            this.btn_Fechar.BackColor = System.Drawing.Color.DimGray;
+            this.btn_Fechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Fechar.Location = new System.Drawing.Point(888, 438);
+            this.btn_Fechar.Name = "btn_Fechar";
+            this.btn_Fechar.Size = new System.Drawing.Size(100, 50);
+            this.btn_Fechar.TabIndex = 0;
+            this.btn_Fechar.Text = "Fechar";
+            this.btn_Fechar.UseVisualStyleBackColor = false;
+            this.btn_Fechar.Click += new System.EventHandler(this.btn_Fechar_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -53,6 +66,7 @@ namespace Fall
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.btn_Pilares);
+            this.Controls.Add(this.btn_Fechar);
             this.Controls.Add(this.btn_Viga);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Main";
@@ -67,6 +81,7 @@ namespace Fall
 
         private System.Windows.Forms.Button btn_Viga;
         private System.Windows.Forms.Button btn_Pilares;
+        private System.Windows.Forms.Button btn_Fechar;
     }
 }
 

@@ -17,34 +17,24 @@ namespace Fall.Entities
         public double ComprConsolo { get; set; }
         public double AlturaRecorteConsolo { get; set; }
         public double AreaLateral {
-            get { return AreaLateral; }
-            set {
-                AreaLateral = (AlturaViga * ComprimentoViga - AlturaRecorteConsolo * ComprConsolo * 2) / (10 ^ 4); //Divido por 10^4 para transformar de cm² para m²
-            }
+            get { return AreaLateral = (AlturaViga * ComprimentoViga - AlturaRecorteConsolo * ComprConsolo * 2); }
+            set { }
         }
         public double DiametroPino { get; set; }
         public double QtdPino { get; set; }
         public double VolumePino { 
-            get { return VolumePino; }
-            set {
-                VolumePino = (Math.Pow(DiametroPino,2) * Math.PI / 4) * (AlturaViga - AlturaRecorteConsolo);
-            }
+            get { return VolumePino = (Math.Pow(DiametroPino, 2) * Math.PI / 4) * (AlturaViga - AlturaRecorteConsolo); }
+            set { }
          }
         public double Volume
         {
-            get { return Volume; }
-            set
-            {
-                Volume = AreaLateral*BaseViga;
-            }
+            get { return Volume = AreaLateral * BaseViga; }
+            set { }
         }
         public double Peso
         {
-            get { return Peso; }
-            set
-            {
-                Peso = Volume * 2500; //Por enquanto o peso específico do concreto é fixo;
-            }
+            get { return Peso = Volume * 2500; /*Por enquanto o peso específico do concreto é fixo*/ }
+            set { }
         }
 
         #endregion

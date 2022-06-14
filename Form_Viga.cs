@@ -16,20 +16,23 @@ namespace Fall
         public Form_Viga()
         {
             InitializeComponent();
-            Viga v = new Viga();
-            v.BaseViga = 20;
-            v.AlturaViga = 40;
-            v.ComprimentoViga = 500;
-            v.DLinha = 2.5;
-            v.ComprConsolo = 25;
-            v.AlturaRecorteConsolo = 25;
-            v.DiametroPino = 32;
-            v.QtdPino = 4;
         }
 
         public void calculo()
         {
-            
+            Viga v = new Viga();
+            string specifier = "#,#.0#";
+            v.BaseViga = Double.Parse(tb_Base.Text);
+            v.AlturaViga = Double.Parse(tb_Altura.Text);
+            v.ComprimentoViga = Double.Parse(tb_Comprimento.Text);
+            v.DLinha = Double.Parse(tb_dLinha.Text);
+            v.ComprConsolo = Double.Parse(tb_CConsolo.Text);
+            v.AlturaRecorteConsolo = Double.Parse(tb_AlturaRecorteConsolo.Text);
+            v.DiametroPino = Double.Parse(tb_DiamPino.Text);
+            v.QtdPino = Double.Parse(tb_QtdPinos.Text);
+            tb_AreaLateral.Text = v.AreaLateral.ToString(specifier) + " m²";
+            tb_Volume.Text = v.Volume.ToString(specifier) + " m³";
+            tb_Peso.Text = v.Peso.ToString(specifier) + " kg";
         }
 
         private void btn_Geometria_Click(object sender, EventArgs e)
@@ -38,9 +41,9 @@ namespace Fall
             Form_GeometriaViga.Show();
         }
 
-        private void tb_Base_TextChanged(object sender, EventArgs e)
+        private void btn_Calcular_Click(object sender, EventArgs e)
         {
-            
+            calculo();
         }
     }
 

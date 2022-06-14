@@ -31,5 +31,10 @@ namespace Fall
         {
 
         }
+
+        private void btn_Fechar_Click(object sender, EventArgs e)
+        {
+            Close();                       
+        }
     }
 }
