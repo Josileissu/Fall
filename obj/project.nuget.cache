@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Bh3NDU/hxc/i5aJRHbLrEh62bteCYsDgjAr+qs4rw5WUMir85NP6GHcFgiFzaN4wueta0pWVLi/UM0LhEbwEzA==",
+  "dgSpecHash": "CkwSfoVoln3f+cecAFH9k0J20XN8XK37ezQ96BZYq9YBQ8mOan5/+zKzDQmOY53/WsLBDE6k3OS77JL4IjQwbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josileissu\\Desktop\\Projeto Suelio\\Fall\\Fall.csproj",
+  "projectFilePath": "C:\\Users\\sueli\\Desktop\\Projeto Suelio\\Fall.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Josileissu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+    "C:\\Users\\sueli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512",
+    "C:\\Users\\sueli\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\sueli\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\sueli\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

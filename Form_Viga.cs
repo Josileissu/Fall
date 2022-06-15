@@ -17,9 +17,22 @@ namespace Fall
         {
             InitializeComponent();
         }
+        public void verificacao()
+        {
+            List<Boolean> verificacoes = new List<Boolean>();
+            verificacoes.Add(String.IsNullOrEmpty(tb_Base.Text));
+            verificacoes.Add(String.IsNullOrEmpty(tb_Altura.Text));
+            foreach (Boolean a in verificacoes){
+                if (a == true)
+                {
+                    MessageBox.Show("deu ruim");
+                    break;
+                }
+            }
+        }
 
         public void calculo()
-        {
+        { //45x62
             Viga v = new Viga();
             string specifier = "#,#.0#";
             v.BaseViga = Double.Parse(tb_Base.Text);
@@ -43,6 +56,7 @@ namespace Fall
 
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
+            verificacao();
             calculo();
         }
     }
